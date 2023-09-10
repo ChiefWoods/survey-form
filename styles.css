@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --github-black: #0D1117;
+}
+
+body {
+  display: inline-flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: calc(100vw - (100vw - 100%));
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  padding: 30px;
+}
+
+#title {
+  font-size: 2.8rem;
+}
+
+#description {
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 15px;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+input {
+  padding: 5px;
+}
+
+select {
+  height: 100%;
+}
+
+label[for="nationality"], label[for="student"], label[for="employed"] {
+  display: flex;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+  width: 14px;
+}
+
+textarea {
+  padding: 5px;
+}
+
+button {
+  width: min-content;
+  margin-left: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--github-black);
+  padding: 12px 40px;
+}
+
+.made-by {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0 auto;
+}
+
+.github-link {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.github-icon {
+  height: 25px;
+}
